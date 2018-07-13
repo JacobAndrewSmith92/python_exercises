@@ -1,0 +1,8 @@
+T=Camry
+N=Titan
+H=Civic
+F=Mustang
+G=Sierra
+C=Camaro
+D=Durango
+F=500c
