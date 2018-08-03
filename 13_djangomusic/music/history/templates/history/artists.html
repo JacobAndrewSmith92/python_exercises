@@ -1,12 +1,14 @@
 {% load static %}
-
 <link rel="stylesheet" type="text/css" href="{% static 'history/style.css' %}" />
 
-<h1>Artists</h1>
+<h1>My Music Collection</h1>
+<h2>Artists</h2>
+{% block homepage %}
     <ul>
     {% for artist in artists %}
     <li><a href="{% url 'history:detail' artist.id %}">{{ artist.artist_name}}</a></li>
     {% endfor %}
+{% endblock homepage %}
     </ul>
 
 

@@ -1,0 +1,10 @@
+<h1>Songs</h1>
+    <ul>
+    {% for song in artist.song_set.all  %}
+        <li>{{song.song_name}}</li>
+    {% endfor %}
+    <!-- {% for alb in songs.album_set.all%}
+        <li>{{album.album_title}}</li>
+    {% endfor %} -->
+    <a href='/history'>Back</a>
+    </ul>
